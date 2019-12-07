@@ -14,7 +14,6 @@ $(document).ready(function () {
         else {
             $(".page-header").removeClass("page-header--fixed");
         }
-
     });
 
     $(".hamburger-btn").click(function (e) {
