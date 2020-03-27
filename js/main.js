@@ -107,7 +107,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#modal-order, #modal-thanks").iziModal({
+    $("#modal-order, #modal-thanks, #modal-thanks-payment, #modal-error").iziModal({
         bodyOverflow: false,
         overlayColor: "rgba(0, 0, 0, 0.8)",
         width: false,
@@ -132,7 +132,7 @@ $(document).ready(function () {
 
     $(".form__input")
 
-        .on("focus", function () {
+        .on("focus input", function () {
             $(this).siblings(".form__placeholder").addClass("form__placeholder--active");
         })
 
@@ -154,6 +154,35 @@ $(document).ready(function () {
                 $(this).addClass("form__input--valid");
             }
     });
+    
+    $(".lang-mask__btn").click(function (e) {
+
+        $(this).toggleClass("active");
+
+        $(this).siblings(".lang-mask__list").toggleClass("open");
+        
+    });
+
+    $(".lang-mask__link").click(function (e) {
+        e.preventDefault();
+
+        var countryNumber = $(this).data("country");
+        var langMaskImg = $(".lang-mask__btn img");
+        
+        $(".form__input--phone-mask").mask(countryNumber, {"autoclear": false}).focus();
+        
+        var imgSrc = $(this).find("img").attr("src");
+        var imgAlt = $(this).find("img").attr("alt");
+
+        langMaskImg.attr({
+            "src": imgSrc,
+            "alt": imgAlt
+        });
+
+        $(".lang-mask__list").removeClass("open");
+        $(".lang-mask__btn").removeClass("active");
+
+    });
 
     $(".form__textarea").on("input", function () {
         
@@ -169,6 +198,9 @@ $(document).ready(function () {
         }
         
     });
+
+    //$("#modal-thanks-payment").iziModal('open');
+    //$("#modal-error").iziModal('open');
 
 });
 

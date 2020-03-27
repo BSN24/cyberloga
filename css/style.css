@@ -788,6 +788,11 @@ textarea {
   height: 50px;
 }
 
+.btn--payment {
+  max-width: 230px !important;
+  height: 60px;
+}
+
 .btn-return-prev {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2961,6 +2966,10 @@ a.breadcrumbs__link:hover {
   margin-bottom: 8px;
 }
 
+.contacts--payment {
+  padding-bottom: 100px;
+}
+
 .contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3033,12 +3042,137 @@ a.breadcrumbs__link:hover {
   background-repeat: no-repeat;
 }
 
+.lang-mask {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 41px;
+  height: 16px;
+  z-index: 10;
+}
+
+.lang-mask__list {
+  display: none;
+  position: absolute;
+  top: 115%;
+  left: 0;
+  width: 100%;
+  background-color: #ccc;
+  padding: 5px 0;
+  border-radius: 2px;
+}
+
+.lang-mask__list.open {
+  display: block;
+}
+
+.lang-mask__item {
+  margin-bottom: 5px;
+}
+
+.lang-mask__item:last-child {
+  margin-bottom: 0;
+}
+
+.lang-mask__item img {
+  display: block;
+  width: 24px;
+  margin: 0 auto;
+}
+
+.lang-mask__link {
+  display: block;
+  padding: 5px 0;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.lang-mask__link:hover {
+  background-color: #555;
+}
+
+.lang-mask__link:active {
+  background-color: #111;
+}
+
+.lang-mask__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.lang-mask__btn img {
+  display: block;
+  width: 24px;
+}
+
+.lang-mask__btn.active .lang-mask__icon {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.lang-mask__icon {
+  display: block;
+  width: 9px;
+  height: 9px;
+  fill: #5f5f5e;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
 .form--feedback {
   background-color: #131312;
 }
 
 .form--feedback .form__wrap {
   padding: 57px 85px 59px;
+}
+
+.form--payment {
+  background-color: #131312;
+  margin-top: -8px;
+}
+
+.form--payment .form__wrap {
+  padding: 82px 87px 59px;
+}
+
+.form--payment .form__placeholder {
+  font-size: 24px;
+  top: 37%;
+  left: 5px;
+}
+
+.form--payment .form__placeholder--active {
+  font-size: 12px !important;
+  top: 0;
+  -webkit-transform: translateY(-19px) !important;
+  transform: translateY(-19px) !important;
+}
+
+.form--payment .form__group-col-2 {
+  margin-bottom: 48px;
+}
+
+.form--payment .form__footer-wrap .form__btn {
+  margin-bottom: 0;
 }
 
 .form--booking {
@@ -3114,6 +3248,18 @@ a.breadcrumbs__link:hover {
   position: relative;
   width: 100%;
   margin-bottom: 40px;
+}
+
+.form__item--phone .form__placeholder {
+  left: 61px;
+}
+
+.form__item--phone .form__placeholder--active {
+  left: 0;
+}
+
+.form__item--phone .form__input {
+  padding-left: 61px;
 }
 
 .form__placeholder {
@@ -3363,6 +3509,19 @@ a.breadcrumbs__link:hover {
   margin-top: 27px;
 }
 
+.modal-thanks--payment .modal-thanks__wrap {
+  max-width: 699px;
+}
+
+.modal-thanks--payment .modal__content {
+  height: 512px;
+  padding-right: 24% !important;
+}
+
+.modal-thanks--payment .modal__content {
+  background-image: url("../img/modal/modal-thanks-bg.jpg");
+}
+
 .modal-thanks__wrap {
   max-width: 625px;
   width: 100%;
@@ -3380,6 +3539,30 @@ a.breadcrumbs__link:hover {
   align-items: center;
   padding: 0;
   padding-left: 85px;
+}
+
+.modal-error .modal-thanks__wrap {
+  max-width: 699px;
+}
+
+.modal-error .modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 512px;
+  padding-right: 24% !important;
+  background-image: url("../img/modal/modal-error-bg.jpg");
+}
+
+.modal-error .modal__text {
+  max-width: 100%;
+  margin-bottom: 40px;
 }
 
 .modal__heading {
@@ -3476,6 +3659,10 @@ a.breadcrumbs__link:hover {
   font-size: 30px;
   line-height: 1.33;
   max-width: 456px;
+}
+
+.modal__btn {
+  max-width: 255px;
 }
 
 .page-footer {
@@ -6831,6 +7018,14 @@ html.iziModal-isAttached {
     padding-right: 50px;
   }
 
+  .form--payment {
+    margin-top: 0;
+  }
+
+  .form--payment .form__group-col-2 {
+    margin-bottom: 40px;
+  }
+
   .form__phone-link {
     font-size: 26px;
   }
@@ -7197,6 +7392,10 @@ html.iziModal-isAttached {
     font-size: 18px;
   }
 
+  .contacts--payment {
+    padding-bottom: 80px;
+  }
+
   .contacts__list {
     display: block;
     padding: 30px 0;
@@ -7225,6 +7424,10 @@ html.iziModal-isAttached {
 
   .form--feedback .form__wrap {
     padding: 40px;
+  }
+
+  .form--payment .form__wrap {
+    padding: 75px 63px;
   }
 
   .form--booking .form__wrap {
@@ -7312,6 +7515,15 @@ html.iziModal-isAttached {
     max-width: 100%;
   }
 
+  .modal-thanks--payment .modal__content {
+    height: 510px;
+    padding-right: 40% !important;
+  }
+
+  .modal-thanks--payment .modal__content {
+    background-image: url("../img/modal/modal-thanks-bg-768.jpg");
+  }
+
   .modal-thanks__img {
     display: none;
   }
@@ -7324,12 +7536,20 @@ html.iziModal-isAttached {
     padding: 50px 40px;
   }
 
+  .modal-error .modal__content {
+    height: 510px;
+    padding-left: 43px !important;
+    padding-right: 28% !important;
+    background-image: url("../img/modal/modal-error-bg-768.jpg");
+  }
+
   .modal__heading {
     text-align: left;
   }
 
-  .modal__heading .heading__title::after {
-    left: 43px;
+  .modal__heading .heading__title {
+    font-size: 36px;
+    line-height: 1.16;
   }
 
   .modal__content {
@@ -7932,6 +8152,14 @@ html.iziModal-isAttached {
     padding-right: 30px;
   }
 
+  .form--payment .form__wrap {
+    padding: 35px 15px 40px;
+  }
+
+  .form--payment .form__placeholder {
+    font-size: 18px;
+  }
+
   .form--booking .form__wrap {
     padding-left: 30px;
     padding-right: 30px;
@@ -7969,8 +8197,41 @@ html.iziModal-isAttached {
     padding-bottom: 70px;
   }
 
+  .modal-thanks--payment .modal__content {
+    padding: 70px 22px !important;
+    height: auto;
+  }
+
+  .modal-thanks--payment .modal__content {
+    background-image: url("../img/modal/modal-bg-320.jpg");
+  }
+
   .modal-thanks .modal__content {
     padding: 50px 30px;
+  }
+
+  .modal-error .modal__content {
+    padding: 70px 22px !important;
+    height: auto;
+    background-image: url("../img/modal/modal-bg-320.jpg");
+  }
+
+  .modal-error .modal__text {
+    text-align: center;
+  }
+
+  .modal-error .modal__heading .heading__title {
+    font-size: 20px;
+  }
+
+  .modal__heading {
+    text-align: center;
+    margin: 0 auto 26px;
+  }
+
+  .modal__heading .heading__title {
+    font-size: 30px;
+    line-height: 1.2;
   }
 
   .modal__content {
@@ -7989,6 +8250,11 @@ html.iziModal-isAttached {
 
   .modal__text {
     font-size: 16px;
+  }
+
+  .modal__btn {
+    margin: 0 auto;
+    height: 48px;
   }
 
   .page-footer__top .page-footer__inner {
@@ -8108,16 +8374,17 @@ html.iziModal-isAttached {
     padding: 50px 20px;
   }
 
-  .modal__heading .heading__title {
-    font-size: 24px;
-  }
-
   .modal__content {
     padding: 35px 20px;
   }
 }
 
 @media screen and (max-width: 420px) {
+  .btn--payment {
+    max-width: 100% !important;
+    height: 48px;
+  }
+
   .card {
     max-width: 300px;
   }

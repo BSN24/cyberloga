@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Оплата</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/icomoon.css?ver=3.0.0">
+    <link rel="stylesheet" href="css/style.css?ver=3.0.0">
+</head>
+
+<body class="page">
+    <!--Start page__wrapper-->
+    <div class="page__wrapper">
+        <!--Start page-header-->
+        <header class="page-header page-header--inner">
+            <div class="page-header__top">
+                <div class="page-header__inner container">
+                    <a class="page-header__logo" href="/">
+                        <picture data-alt="Cyberloga - База киберспорта" data-default-src="img/logo.png">
+                            <source media="(max-width: 576px)" srcset="img/logo-mobile.png">
+                                <img src="img/logo.png" alt="Cyberloga - База киберспорта">
+                        </picture>
+                    </a>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item"><a class="main-nav__link" href="clubs.html">Компьютерные клубы</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="cost.html">Цены</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="news.html">Новости</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="articles.html">Статьи</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="page-header__contacts"><a class="page-header__phone" href="tel:74950152662">+7 (495) 015-26-62</a>
+                        <button class="hamburger-btn" type="button"><span class="hamburger-btn__line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End page-header-->
+        <!--Start page__content-->
+        <main class="page__content">
+            <!--Start breadcrumbs-->
+            <nav class="breadcrumbs">
+                <div class="breadcrumbs__inner container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item"><span class="breadcrumbs__link">Оплата</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--End breadcrumbs-->
+            <!--Start page-section-inner-->
+            <section class="page-section-inner page-section-inner--contacts">
+                <div class="container">
+                    <div class="heading heading--main-heading heading--bottom-line">
+                        <h1 class="heading__title">Пополнение баланса</h1>
+                    </div>
+                </div>
+                <!--Start contacts-->
+                <div class="contacts contacts--payment">
+                    <div class="contacts__inner container">
+                        <form class="form form--payment" action="javascript:void(0);" method="POST" autocomplete="off">
+                            <div class="form__wrap">
+                                <div class="form__body">
+                                    <div class="form__group form__group-col-2">
+                                        <div class="form__item form__item--phone">
+                                            <div class="lang-mask">
+                                                <button class="lang-mask__btn" type="button" data-country="+7 (999) 999-99-99">
+                                                    <svg class="lang-mask__icon">
+                                                        <use xlink:href="img/svg-sprite/symbol/sprite.svg#down-arrow"></use>
+                                                    </svg>
+                                                    <img src="img/flags/rus.png" alt="Россия +7">
+                                                </button>
+                                                <ul class="lang-mask__list">
+                                                    <li class="lang-mask__item">
+                                                        <a class="lang-mask__link" href="javascript:void(0);" data-country="+7 (999) 999-99-99">
+                                                            <img src="img/flags/rus.png" alt="Россия +7">
+                                                        </a>
+                                                    </li>
+                                                    <li class="lang-mask__item">
+                                                        <a class="lang-mask__link" href="javascript:void(0);" data-country="+380 (999) 999-99-99">
+                                                            <img src="img/flags/ukraine.png" alt="Украина +380">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <label class="form__placeholder" for="form-phone">Телефон</label>
+                                            <input class="form__input form__input--phone form__input--phone-mask" type="tel" name="your-phone" id="form-phone" required>
+                                        </div>
+                                        <div class="form__item">
+                                            <label class="form__placeholder" for="form-email">Сумма оплаты, ₽</label>
+                                            <input class="form__input" type="text" name="price" id="form-email" pattern="^[0-9]+$" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__footer">
+                                    <div class="form__footer-wrap">
+                                        <button class="form__btn btn btn--primary btn--payment" type="submit">Оплатить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--End contacts-->
+            </section>
+            <!--End page-section-inner-->
+        </main>
+        <!--End page__content-->
+        <!--Start page-footer-->
+        <!--Start page-footer-->
+        <footer class="page-footer">
+            <div class="page-footer__top">
+                <div class="page-footer__inner container">
+                    <div class="page-footer__rights-reserved">
+                        <p><span>© 2019, CYBERLOGA.</span>
+                        </p>
+                        <p>Все права защищены</p>
+                    </div>
+                    <nav class="main-nav main-nav--footer">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item"><a class="main-nav__link" href="clubs.html">Компьютерные клубы</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="cost.html">Цены</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="news.html">Новости</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="articles.html">Статьи</a>
+                            </li>
+                            <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="page-footer__contacts"><a class="page-footer__phone" href="tel:74950152662"><span class="ico i-phone-aws"></span><span>+7 (495) 015-26-62</span></a><a class="page-footer__email" href="mailto:info@cyberloga.ru"><span class="ico i-envelope"></span><span>info@cyberloga.ru</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-footer__bottom">
+                <div class="page-footer__inner container">
+                    <div class="page-footer__policy"><span>Политика конфиденциальности</span>
+                    </div>
+                    <div class="page-footer__social social">
+                        <ul class="social__list">
+                            <li class="social__item"><a class="social__link social__link--vk" href="javascript:void(0);" target="blank"><span class="ico i-vk"></span></a>
+                            </li>
+                            <li class="social__item"><a class="social__link social__link--fb" href="javascript:void(0);" target="blank"><span class="ico i-facebook-f"></span></a>
+                            </li>
+                            <li class="social__item"><a class="social__link social__link--ok" href="javascript:void(0);" target="blank"><span class="ico i-odnoklassniki"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--End page-footer-->
+        <!--End page-footer-->
+        <!--Start modal-->
+        <div class="modal">
+            <div class="modal-order" id="modal-order">
+                <div class="modal__content">
+                    <button class="modal__close" type="button" data-izimodal-close></button>
+                    <div class="modal__heading heading heading--bottom-line"><b class="heading__title">Забронировать компьютер</b>
+                    </div>
+                    <div class="modal-order__wrap">
+                        <form class="modal__form form" action="javascript:void(0);" method="POST" autocomplete="off">
+                            <div class="form__wrap">
+                                <div class="form__body">
+                                    <div class="form__group-col-2">
+                                        <div class="form__item">
+                                            <label class="form__placeholder" for="form-name">Ваше имя</label>
+                                            <input class="form__input" type="text" name="your-name" id="form-name" minlength="2" maxlength="30" required>
+                                        </div>
+                                        <div class="form__item">
+                                            <label class="form__placeholder" for="form-phone">Телефон</label>
+                                            <input class="form__input form__input--phone" type="tel" name="your-phone" id="form-phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="form__group-col-2">
+                                        <div class="form__item">
+                                            <div class="form__custom-select">
+                                                <select class="form__select" name="amount-pc">
+                                                    <option value="Количество компьютеров" selected disabled>Количество компьютеров</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <div class="form__custom-select">
+                                                <select class="form__select" name="duration">
+                                                    <option value="Продолжительность" selected disabled>Продолжительность</option>
+                                                    <option value="1 час">1 час</option>
+                                                    <option value="2 часа">2 часа</option>
+                                                    <option value="3 часа">3 часа</option>
+                                                    <option value="4 часа">4 часа</option>
+                                                    <option value="5 часов">5 часов</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__footer">
+                                    <div class="form__group-col-2">
+                                        <div class="form__item">
+                                            <button class="form__btn btn btn--primary" type="submit">Забронировать</button>
+                                        </div>
+                                    </div>
+                                    <div class="form__group-col-2">
+                                        <div class="form__item">
+                                            <p class="form__privacy-policy">Нажимая кнопку отправить заявку, вы соглашаетесь с условиями <a href="javascript:void(0);">политики конфиденциальности</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-thanks" id="modal-thanks">
+                <div class="modal__content">
+                    <button class="modal__close" type="button" data-izimodal-close></button>
+                    <div class="modal-thanks__wrap">
+                        <div class="modal__heading heading heading--bottom-line"><b class="heading__title">Спасибо, за обращение!</b>
+                        </div>
+                        <div class="modal__text">
+                            <p>Жди звонка в ближайшее время для подтверждения брони!</p>
+                        </div>
+                    </div>
+                    <div class="modal-thanks__img">
+                        <img src="img/modal/img-thanks.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-error" id="modal-error">
+                <div class="modal__content">
+                    <button class="modal__close" type="button" data-izimodal-close></button>
+                    <div class="modal-thanks__wrap">
+                        <div class="modal__heading heading heading--bottom-line"><b class="heading__title">Извините, возникли <br> технические трудности</b>
+                        </div>
+                        <div class="modal__text">
+                            <p>Мы работаем над этим и скоро устраним неполадки</p>
+                        </div><a class="modal__btn btn btn--transparent" href="index.html">На главную</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-thanks modal-thanks--payment" id="modal-thanks-payment">
+                <div class="modal__content">
+                    <button class="modal__close" type="button" data-izimodal-close></button>
+                    <div class="modal-thanks__wrap">
+                        <div class="modal__heading heading"><b class="heading__title">Спасибо, Ваш <br> игровой баланс пополнен</b>
+                        </div><a class="modal__btn btn btn--transparent" href="index.html">На главную</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End modal-->
+    </div>
+    <!--End page__wrapper-->
+    <!--Start scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/lib/picturePolyfill.min.js"></script>
+    <script src="js/lib/owl.carousel.min.js"></script>
+    <script src="js/lib/jquery.fancybox.min.js"></script>
+    <script src="js/lib/iziModal.min.js"></script>
+    <script src="js/lib/jquery.selectric.js"></script>
+    <script src="js/lib/jquery.maskedinput.js"></script>
+    <script src="js/main.js?ver=3.0.0"></script>
+    <!--End scripts-->
+</body>
+
+</html>
