@@ -143,7 +143,7 @@ $(document).ready(function () {
     });
 
     $(".form__input--phone")
-        .mask("+7 (999) 999-99-99", {"autoclear": false})
+        .mask("+7 (999) 999-99-99", {autoclear: false, placeholder: "+7 (___) ___-__-__"})
         .on("input blur", function () {
             if ($(this).val() === "") {
                 $(this).siblings(".form__placeholder").removeClass("form__placeholder--active");
@@ -153,6 +153,14 @@ $(document).ready(function () {
             else if ($(this).val() !== "") {
                 $(this).addClass("form__input--valid");
             }
+    }).on("change", function () {
+        var value = $(this).val();
+
+        if (value.replace(/[_]/g, "").length < 18) {
+            $(".form__error-message").text("Ошибка. Пожалуйста, проверьте правильность вводе телефона");
+        } else {
+            $(".form__error-message").text("");
+        }
     });
     
     $(".lang-mask__btn").click(function (e) {
